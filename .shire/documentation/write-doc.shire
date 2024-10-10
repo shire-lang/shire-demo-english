@@ -1,0 +1,11 @@
+---
+name: "Write Doc"
+description: "Here is a description of the action."
+interaction:  RunPanel
+actionLocation: ContextMenu
+onStreamingEnd: { saveFile("docs/api.md")  }
+---
+
+根据如下的代码编写 API 文档：
+
+/file:src/main/java/com/phodal/shire/demo/controller/BlogController.java

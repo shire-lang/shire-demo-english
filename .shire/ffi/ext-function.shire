@@ -1,0 +1,9 @@
+---
+name: "hello"
+functions:
+  normal: ".shire/ffi/hello.kts"(string)
+variables:
+  "var2": /.*ple.shire/ { normal("world") }
+---
+
+hello, $var2

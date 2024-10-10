@@ -1,0 +1,16 @@
+---
+name: "Custom Agent"
+description: "内部 Agent 示例"
+actionLocation: ContextMenu
+interaction: AppendCursor
+afterStreaming: {
+    condition {
+      "sucesss" { output.length > 1 }
+    }
+    case condition {
+      "sucesss" { execute("lifecycle-streaming-end.shire") }
+    }
+  }
+---
+
+@apiMarket 设计一个博客 API
