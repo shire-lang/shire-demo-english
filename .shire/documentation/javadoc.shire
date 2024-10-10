@@ -1,15 +1,15 @@
 ---
-name: "生成注释"
+name: "Generate Comments"
 interaction: InsertBeforeSelection
 actionLocation: ContextMenu
 when: $fileName.contains(".java") && $filePath.contains("src/main/java")
 onStreamingEnd: { insertNewline | formatCode }
 ---
 
-为如下的代码编写注释，使用 javadoc 风格：
+Write comments for the following code using the Javadoc style:
 
 ```$language
 $selection
 ```
 
-只返回注释
+Only return the comments.

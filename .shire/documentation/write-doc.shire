@@ -6,6 +6,6 @@ actionLocation: ContextMenu
 onStreamingEnd: { saveFile("docs/api.md")  }
 ---
 
-根据如下的代码编写 API 文档：
+Write API documentation based on the following code:
 
 /file:src/main/java/com/phodal/shire/demo/controller/BlogController.java

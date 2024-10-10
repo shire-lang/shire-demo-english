@@ -6,12 +6,35 @@ variables:
 onStreamingEnd: { parseCode | saveFile | openFile | runCode }
 ---
 
-根据参考 WireMock 的 API 设计，生成 k6 负载测试代码。
+Generate k6 load testing code based on the WireMock API design.
 
-1. 请尽可能用一个 JavaScript 文件来测试所有的请求。
+1. Please try to test all requests using a single JavaScript file.
 
-对应的 WireMock 数据：
+Corresponding WireMock data:
 
 $code
 
-请返回最后的 k6 测试代码，方便我使用。
+Please return the final k6 test code for my convenience.
+
+Translated content:
+
+---
+
+name: "K6 Benchmark"
+variables:
+  "inputFile": "src/main/java/com/phodal/shire/controller/BlogController.java"
+  "code": "Retrieve the content from the file 'mock_v0-stubs.json' using the 'cat' command."
+onStreamingEnd: "Parse the code, save the file, open the file, and run the code."
+
+---
+
+Generate k6 load testing code based on the WireMock API design.
+
+Requirements:
+1. Please aim to test all requests within a single JavaScript file.
+
+The corresponding WireMock data is as follows:
+
+$code
+
+Please provide the final k6 test code so that I can use it easily.

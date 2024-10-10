@@ -4,18 +4,17 @@ variables:
   "gradleFile": /build\.gradle.kts/ { cat }
   "codePath": /build\.gradle.kts/ { print }
 onStreamingEnd: { parseCode | patch($codePath, $output) }
-model: "gpt-4o"
 ---
 
-你是一个资深的后台开发，请使用 patch 的项目这个项目添加 springdoc-openapi  使用， Gradle Plugin。
+You are an experienced backend developer, please use the patch for this project to add the SpringDoc OpenAPI using the Gradle Plugin.
 
-要求：
+Requirements:
 
-1. 请不要修改无关的代码。
-2. 请只返回 patch。
+1. Please do not modify unrelated code.
+2. Please return only the patch.
 
-Build.gradle.kts 文件内容如下所示：
+The content of the Build.gradle.kts file is as shown below:
 
 $gradleFile
 
-请返回 diff patch，方便我直接使用。
+Please return the diff patch so that I can use it directly.

@@ -18,7 +18,3 @@ Shire Data Architecture:
 
 Documentation: [Shire AI Coding Agent Language](https://shire.phodal.com/)
 
-## LICENSE
-
-This code is distributed under the MPL 2.0 license. See `LICENSE` in this directory.
-# shire-demo-english

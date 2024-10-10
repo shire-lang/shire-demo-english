@@ -1,19 +1,19 @@
 ---
-name: "代码修改"
+name: "Code Modification"
 variables:
   "controllerCode": /any/ { cat($output) | sed("^import\s+([\w.]+\.\*|[\w.]+);\s*$", "") }
   "outputFile": /any/ { print($output) }
 onStreamingEnd: { parseCode | saveFile($outputFile) }
 ---
 
-根据如下的需求，对原 Java 代码进行修改。如果原始代码为空，请返回新的代码。
+According to the following requirements, modify the original Java code. If the original code is empty, please return the new code.
 
-需求：
+Requirements:
 
 $story
 
-原始代码：
+Original Code:
 
 $controllerCode
 
-请使用 Markdown Block 返回变更后的代码，只返回代码。
+Please use Markdown Block to return the modified code, and only return the code.

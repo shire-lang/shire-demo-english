@@ -3,7 +3,7 @@ name: "footer"
 onStreamingEnd: { parseCode | showWebView }
 ---
 
-生成一个 Hello, world，要求如下：
+Generate a `Hello, world` with the following requirements:
 
 You are an expert Bootstrap developer
 You take detailed description of a reference web page from the user, and then build single page apps

@@ -1,5 +1,5 @@
 ---
-name: "添加注解"
+name: "Add Annotation to Controller Test"
 variables:
   "controllers": /.*.ControllerTest.java/ { print }
   "gen-swagger": /any/ { batch("add-annotation-to-controller-test.shire", $controllers) }

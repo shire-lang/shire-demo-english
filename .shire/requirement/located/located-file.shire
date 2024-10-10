@@ -1,5 +1,5 @@
 ---
-name: "定位变更"
+name: "Positioning Change"
 variables:
   "story": /any/ { thread(".shire/shell/github-issue.curl.sh") | jsonpath("$.body") }
   "controllers": /.*.java/ { cat | grep("class\s+([a-zA-Z]*Controller)")  }
@@ -10,37 +10,36 @@ variables:
 onStreamingEnd: { openFile }
 ---
 
-你是一个网站资深的开发人员，能帮助我定位到代码文件。请根据如下的用户故事，以及对应的 controller, service 名称，选择最合适修改的代码文件
+As a senior developer on the website, you can help me locate the code files. According to the following user story and the corresponding controller and service names, please select the most suitable code file to modify.
 
-用户故事：
+User Story:
 
 $story
 
-Controller 列表：
+Controller List:
 
 $controllers
 
-Service 列表：
+Service List:
 
 $services
 
-这个网站的一些专有名词如下：
+Some domain-specific terms for this website are as follows:
 
 $domainLanguage
 
-要求：
+Requirements:
 
-如果没有合适的 controller，请给出最合适的 controller 和 service 路径。
+If there is no suitable controller, please provide the most suitable controller and service path.
 
-Controller 示例路径在：
+Example controller path is at:
 
 $firstController
 
-service 示例路径在：
+Example service path is at:
 
 $firstService
 
+You should only return the file name, such as: src/main/xxx/DemoController.java
 
-你只返回文件名，诸如：src/main/xxx/DemoController.java
-
-请严格按格式返回，只返回存在的代码文件。
+Please strictly follow the format and only return the names of existing code files.

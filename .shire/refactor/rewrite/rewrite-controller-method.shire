@@ -5,19 +5,19 @@ variables:
 onStreamingEnd: { parseCode | saveFile($input, $output) }
 ---
 
-检查如下的代码中的方法命名是否易于理解，如果不易于理解，请重新命名。
+Check the method naming in the following code to see if it is easy to understand. If it is not, please rename it.
 
-要求：
+Requirements:
 
-1. 如果代码 ok，请返回原代码。
-2. 如果不易于理解，请返回修改后的代码。
+1. If the code is okay, please return the original code.
+2. If it is not easy to understand, please return the modified code.
 
-文件路径：
+File path:
 
 $input
 
-代码：
+Code:
 
 $code
 
-如果代码 ok，请返回 ok。如果不易于理解，请返回修改后的代码。
+If the code is okay, please return "ok". If it is not easy to understand, please return the modified code.

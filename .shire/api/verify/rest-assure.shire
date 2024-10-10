@@ -1,20 +1,21 @@
 ---
+
 name: "REST Assured"
 variables:
-  "applicaiton": /.*Application.java/ { cat  }
+  "application": /.*Application.java/ { cat }
   "outputFile": "src/test/java/com/phodal/shire/controller/BlogControllerTest.java"
   "code": /mock_v0-stubs\.json/ { cat }
 onStreamingEnd: { parseCode | saveFile($outputFile, $output) | openFile($outputFile) | runCode($outputFile) }
 ---
 
-根据参考 WireMock 的 API 设计，生成 REST Assured 测试代码。
+Generate REST Assured test code based on the WireMock API design.
 
-1. 请使用 `RestAssured` 类的 `given` 方法，来构建测试请求。
-2. 这个项目使用的是 `Spring Boot`，所以请使用 `@SpringBootTest` 注解来启动 Spring Boot。
-3. 测试类的路径为 $outputFile, application 类的路径为 $applicaiton。
+1. Please use the `given` method from the `RestAssured` class to build test requests.
+2. This project uses `Spring Boot`, so please use the `@SpringBootTest` annotation to start Spring Boot.
+3. The path for the test class is $outputFile, and the path for the application class is $application.
 
-对应的 WireMock 数据：
+Corresponding WireMock data:
 
 $code
 
-请返回最后的 REST Assured 代码，方便我使用。
+Please return the final REST Assured code for my convenience.

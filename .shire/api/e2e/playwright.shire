@@ -5,11 +5,11 @@ variables:
 onStreamingEnd: { parseCode | saveFile | openFile | runCode }
 ---
 
-根据如下的前端组件，生成 Playwright 测试代码。
+Generate Playwright test code based on the following front-end component.
 
-1. 请只返回 TypeScript 代码，不要返回其它
+1. Please only return TypeScript code, nothing else.
 
-对应的前端代码：
+Corresponding front-end code:
 
 ```javascript
 import logo from './logo.svg';
@@ -40,4 +40,4 @@ function App() {
 export default App;
 ```
 
-请返回最后的 Playwright 的  TypeScript 代码，方便我使用。
+Please return the final Playwright TypeScript code for my convenience.

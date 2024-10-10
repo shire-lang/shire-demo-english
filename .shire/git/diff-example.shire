@@ -1,5 +1,5 @@
 ---
-name: "自动 patch"
+name: "Auto Patch"
 variables:
   "codepath": /BlogController\.java/ { print }
   "controllerCode": /BlogController\.java/ { cat }
@@ -7,14 +7,14 @@ variables:
 onStreamingEnd: { parseCode | diff($controllerCode, $output) }
 ---
 
-你是一个资深的后台开发，请完成如下需求。
+You are a senior backend developer, please complete the following requirement.
 
-需求：删除博客。
+Requirement: Delete a blog.
 
-现有代码：
+Existing code:
 
 $codepath
 
 $controllerCode
 
-请返有的代码，方便我对比。
+Please return the code so that I can compare.

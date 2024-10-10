@@ -1,5 +1,5 @@
 ---
-name: "寻找代码变更点"
+name: "Find Code Change Points"
 variables:
   "story": /any/ { thread(".shire/shell/dify-user-story-workflow.curl.sh") | jsonpath("$.answer", true) }
   "controllers": /.*.java/ { cat | grep("class\s+([a-zA-Z]*Controller)")  }
@@ -12,9 +12,9 @@ afterStreaming: {
 }
 ---
 
-你是一个网站资深的开发人员，能帮助我定位到代码文件。请根据如下的用户故事，以及对应的 controller 名称，选择最合适修改的 controller
+You are a senior developer on a website and can help me locate the code file. According to the following user story and the corresponding controller name, please select the most appropriate controller to modify.
 
-用户故事：
+User Story:
 
 $story
 
@@ -22,18 +22,16 @@ Controller
 
 $controllers
 
-这个网站的一些专有名词如下：
+Some domain-specific terms on this website are as follows:
 
 $domainLanguage
 
-要求：
+Requirements:
 
-如果没有合适的 controller，请给出最合适的 controller 路径。 Controller 示例路径在：
+If there is no suitable controller, please provide the most appropriate controller path. An example controller path is:
 
 $firstController
 
-你只返回文件名，诸如：src/main/xxx/DemoController.java
+You should only return the file name, such as: src/main/xxx/DemoController.java
 
-请严格按格式返回，只返回文件路径。
-
-
+Please strictly follow the format and only return the file path.

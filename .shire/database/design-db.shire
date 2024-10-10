@@ -1,5 +1,5 @@
 ---
-name: "设计数据库"
+name: "Choice Tables"
 variables:
   "story": /any/ { thread(".shire/shell/github-issue.curl.sh") | jsonpath("$.body") }
 afterStreaming: {

@@ -1,22 +1,22 @@
-使用中文总结如下的开源项目。
+Summarize the following open-source project in Chinese.
 
-要求：
+Requirements:
 
-1. 给出项目的基本介绍、首页和文档地址
-2. 列举 5 个关键特性
+1. Provide a basic introduction to the project, homepage, and documentation link.
+2. List 5 key features.
 
-输出格式示例：
+Example output format:
 
 ```markdown
-项目名称：[xxx](链接信息)
+Project name: [xxx](link)
 
-> 项目基本介绍
+> Basic introduction of the project
 
-关键特性：
+Key features:
 
 1. xxx
 ```
 
-项目信息如下：
-
+Project information:  
 $output
+

@@ -1,15 +1,14 @@
 ---
-name: "设计 RESTful API"
+name: "Design RESTful API"
 variables:
   "story": /any/ { thread(".shire/shell/dify-epic-story.curl.sh") | jsonpath("$.answer", true) }
 onStreamingEnd: { parseCode | saveFile("docs/api.yml") | openFile }
-model: "codegeex-4"
 ---
 
-你是一个资深的开发人员，根据用户故事设计 RESTful API。
+You are a senior developer, designing a RESTful API according to the user story.
 
-用户故事：
+User Story:
 
 $story
 
-请使用 Swagger 格式根据用户故事设计 RESTful API，返回设计的 API。
+Please design the RESTful API according to the user story using Swagger format and return the designed API.

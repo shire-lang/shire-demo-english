@@ -6,10 +6,10 @@ variables:
 onStreamingEnd: { parseCode | saveFile | openFile | runCode }
 ---
 
-根据参考 WireMock 的 API 设计，生成 Locust 负载测试代码。
+Generate Locust load testing code based on the WireMock API design.
 
-对应的 WireMock 数据：
+Corresponding WireMock data:
 
 $code
 
-请返回最后的 Locust 测试代码，方便我使用。
+Please return the final Locust test code for my convenience.

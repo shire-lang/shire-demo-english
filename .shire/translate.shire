@@ -1,0 +1,11 @@
+---
+name: "Translate"
+actionLocation: ContextMenu
+onStreamingEnd: { saveFile($filePath)}
+---
+
+Translate the following content to English:
+
+$selection
+
+Please return the translated content.

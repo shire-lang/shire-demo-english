@@ -6,15 +6,14 @@ enabled: false
 
 [interaction: OnPaste]
 
-代码生成。根据当前的代码上下文（光标前后），对用户粘贴的代码，生成新的代码。
+Code generation. Based on the current code context (before and after the cursor), generate new code for the code the user pastes.
 
-光标前的代码：
+Code before the cursor:
 
 $beforeCursor
 
-光标后的代码：
+Code after the cursor:
 
 $afterCursor
 
-用户粘贴的代码：
-
+Code pasted by the user:

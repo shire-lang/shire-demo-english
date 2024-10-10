@@ -3,7 +3,7 @@ name: "footer"
 onStreamingEnd: { parseCode | showWebView }
 ---
 
-生成一个移动端的银行 app 底部导航栏，要求如下：
+Generate a mobile bank app bottom navigation bar with the following requirements:
 
 You are an expert React/Ant Design of React developer
 You take screenshots of a reference web page from the user, and then build single page apps

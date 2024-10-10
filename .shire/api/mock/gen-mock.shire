@@ -8,14 +8,14 @@ afterStreaming: {
 }
 ---
 
-使用 WireMock 生成一个博客 API CRUD 的样例数据，使用 WireMock 的 JSON 格式 + mappings 方式。
+Use WireMock to generate a sample dataset for a blog API CRUD, using WireMock's JSON format + mappings method.
 
-返回 WireMap 格式示例：
+Return WireMap format example:
 
 ```json
 {
   "mappings": [
-     // 请在这里填写 mappings 信息，使用 WireMock 的 JSON 格式
+     // Please fill in the mappings information here, using WireMock's JSON format
    ]
 }
 ```

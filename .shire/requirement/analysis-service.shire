@@ -1,5 +1,5 @@
 ---
-name: "分析需求，选择合适的代码文件"
+name: "Analyze Requirements, Select the Appropriate Code File"
 variables:
   "firstService": /CinemaService\.java/ { print }
   "domainLanguage": /domain-language\.csv/ { cat }
@@ -11,26 +11,26 @@ afterStreaming: {
 }
 ---
 
-你是一个网站资深的开发人员，能帮助我定位到代码文件。请根据如下的用户故事，Controller 代码和对应的 service 名称，选择最合适修改的 service
+As a senior developer on the website, you can help me locate the code file. Please select the most appropriate service to modify based on the following user story, Controller code, and the corresponding service name.
 
-用户故事：
+User Story:
 
 $story
 
-Controller 代码：
+Controller Code:
 
 $controllerCode
 
-这个网站的一些专有名词如下：
+Some domain-specific terms on this website are as follows:
 
 $domainLanguage
 
-要求：
+Requirements:
 
-如果没有合适的 service，请给出最合适的 service 路径。 Service 示例路径在：
+If there is no suitable service, please provide the most appropriate service path. An example service path is:
 
 $firstService
 
-你只返回文件名，诸如：src/main/xxx/DemoService.java
+Please only return the file name, such as: src/main/xxx/DemoService.java
 
-请严格按格式返回，只返回文件路径，不要包含其他内容。
+Please strictly follow the format and only return the file path, do not include any other content.

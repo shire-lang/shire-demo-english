@@ -1,5 +1,5 @@
 ---
-name: "Run Mock in before Streaming"
+name: "Run Mock Before Streaming"
 model: "gpt-4o"
 variables:
   "controllerCode": /BlogController\.java/ { cat }
@@ -7,8 +7,8 @@ beforeStreaming: { execute(":bootRun") }
 onStreamingEnd: { parseCode | saveFile | openFile | runCode }
 ---
 
-根据如下的代码，生成 Intellij IDEA 的 Http Client 代码。
+Generate IntelliJ IDEA's Http Client code based on the following code.
 
-$controllerCode
+`$controllerCode`
 
-请直接返回 JetBrains 的  markdown `http request` 代码块，注意 markdown 语言是：`http request`` ，方便我直接测试和使用
+Please directly return the JetBrains markdown `http request` code block, noting that the markdown language is: `http request`` for ease of direct testing and use.

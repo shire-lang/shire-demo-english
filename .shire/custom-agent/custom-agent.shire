@@ -1,6 +1,6 @@
 ---
 name: "Custom Agent"
-description: "内部 Agent 示例"
+description: "Custom Agent Example"
 actionLocation: ContextMenu
 interaction: AppendCursor
 afterStreaming: {
@@ -13,4 +13,4 @@ afterStreaming: {
   }
 ---
 
-@apiMarket 设计一个博客 API
+@apiMarket Design a Blog API

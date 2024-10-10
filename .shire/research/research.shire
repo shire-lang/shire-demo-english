@@ -5,14 +5,14 @@ variables:
 onStreamingEnd: { saveFile("docs/output.md") }
 ---
 
-根据如下的草稿和对应的资料，编写一篇对应主题的文章。
+Based on the following outline and corresponding reference materials, write an article on the given topic.
 
-文章大纲如下：
+Article Outline:
 
 $article
 
-相关的项目和资料信息如下：
+Related projects and resource information are as follows:
 
 $crawl
 
-请根据大纲来编写文章。
+Please write the article according to the outline.
